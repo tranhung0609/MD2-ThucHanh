@@ -41,7 +41,7 @@ public class ChuyenDoiSoThanhChu {
         if (number < 0 || number > 999) {
             System.out.println("Nhập quá số quy định");
         } else if (number == 0) {
-            System.out.println("Không");
+            System.out.println("零");
         } else if (number < 20) {
             String word = donVi(number);
             System.out.println(word);
@@ -50,9 +50,9 @@ public class ChuyenDoiSoThanhChu {
             if (hangTram == 0) {
                 word = hangChuc(hangChuc) + " " + donVi(hangDonVi);
             } else if (hangChuc == 1) {
-                word = donVi(hangTram) + " trăm " + donVi(number % 100);
+                word = donVi(hangTram) + "百" + donVi(number % 100);
             } else {
-                word = donVi(hangTram) + " trăm " + hangChuc(hangChuc) + " " + donVi(hangDonVi);
+                word = donVi(hangTram) + "百" + hangChuc(hangChuc) + "" + donVi(hangDonVi);
             }
             System.out.println(word);
         }
@@ -62,28 +62,28 @@ public class ChuyenDoiSoThanhChu {
         String hangChucWord = "";
         switch (number) {
             case 2:
-                hangChucWord = "hai mươi";
+                hangChucWord = "二十　";
                 break;
             case 3:
-                hangChucWord = "ba mươi";
+                hangChucWord = "三十";
                 break;
             case 4:
-                hangChucWord = "bốn mươi";
+                hangChucWord = "四十";
                 break;
             case 5:
-                hangChucWord = "năm mươi";
+                hangChucWord = "五十";
                 break;
             case 6:
-                hangChucWord = "sáu mươi";
+                hangChucWord = "六十";
                 break;
             case 7:
-                hangChucWord = "bảy mươi";
+                hangChucWord = "七十";
                 break;
             case 8:
-                hangChucWord = "tám mươi";
+                hangChucWord = "八十";
                 break;
             case 9:
-                hangChucWord = "chín mươi";
+                hangChucWord = "九十";
                 break;
         }
         return hangChucWord;
@@ -93,61 +93,61 @@ public class ChuyenDoiSoThanhChu {
         String donViWord = "";
         switch (number) {
             case 1:
-                donViWord = "một";
+                donViWord = "一";
                 break;
             case 2:
-                donViWord = "hai";
+                donViWord = "二";
                 break;
             case 3:
-                donViWord = "ba";
+                donViWord = "三";
                 break;
             case 4:
-                donViWord = "bốn";
+                donViWord = "四";
                 break;
             case 5:
-                donViWord = "năm";
+                donViWord = "五";
                 break;
             case 6:
-                donViWord = "sáu";
+                donViWord = "六";
                 break;
             case 7:
-                donViWord = "bảy";
+                donViWord = "七";
                 break;
             case 8:
-                donViWord = "tám";
+                donViWord = "八";
                 break;
             case 9:
-                donViWord = "chín";
+                donViWord = "九";
                 break;
             case 10:
-                donViWord = "mười";
+                donViWord = "十";
                 break;
             case 11:
-                donViWord = "mười một";
+                donViWord = "十一";
                 break;
             case 12:
-                donViWord = "mười hai";
+                donViWord = "十二";
                 break;
             case 13:
-                donViWord = "mười ba";
+                donViWord = "十三";
                 break;
             case 14:
-                donViWord = "mười bốn";
+                donViWord = "十四";
                 break;
             case 15:
-                donViWord = "mười năm";
+                donViWord = "十五";
                 break;
             case 16:
-                donViWord = "mười sáu";
+                donViWord = "十六";
                 break;
             case 17:
-                donViWord = "mười bảy";
+                donViWord = "十七";
                 break;
             case 18:
-                donViWord = "mười tám";
+                donViWord = "十八";
                 break;
             case 19:
-                donViWord = "mười chín";
+                donViWord = "十九";
                 break;
         }
         return donViWord;
