@@ -8,9 +8,9 @@ public class GopMang {
         int[] result = new int[length];
         System.arraycopy(array1, 0, result, 0, array1.length);
         System.arraycopy(array2, 0, result, array1.length, array2.length);
-        System.out.printf("Mảng sau khi gộp: "+ "\n");
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i] + "\t");
+        System.out.print("Mảng sau khi gộp: "+ "\n");
+        for (int j : result) {
+            System.out.print(j + "\t");
         }
     }
 }
