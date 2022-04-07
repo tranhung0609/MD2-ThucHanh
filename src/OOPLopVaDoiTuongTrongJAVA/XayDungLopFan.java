@@ -1,9 +1,7 @@
 package OOPLopVaDoiTuongTrongJAVA;
 
 public class XayDungLopFan {
-    final int SLOW =1;
-    final int  MEDIUM=2;
-    final int FAST =3;
+    final int SLOW =1,MEDIUM=2,FAST =3;
 
     private int speed =SLOW;
     private boolean on = false;
