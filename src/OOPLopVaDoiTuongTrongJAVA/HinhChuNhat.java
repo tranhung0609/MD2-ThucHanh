@@ -34,6 +34,9 @@ public class HinhChuNhat {
     public static double DienTich(double height, double wight) {
         return (height*wight);
     }
+    public  static double ChuVi(double height, double wight){
+        return (height+wight)*2;
+    }
 
     public static void main(String[] args) {
         Scanner Hcn= new Scanner(System.in);
@@ -44,6 +47,8 @@ public class HinhChuNhat {
         double Wight=Hcn.nextDouble();
         System.out.println("Diện tích là");
         System.out.println(HinhChuNhat.DienTich((double) Height, (double) Wight));
+        System.out.println("Chu Vi HCN là: ");
+        System.out.println(HinhChuNhat.ChuVi((double) Height,(double) Wight));
     }
 }
 
