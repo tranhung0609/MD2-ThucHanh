@@ -2,32 +2,6 @@ package com.company;
 
 import java.util.Scanner;
 
-//public class ChuyenDoiSoThanhChu {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter your number 1 - 999:");
-//        int number = sc.nextInt();
-//
-//        int hangTram = number / 100;
-//        int hangChuc = number / 10;
-//        int hangDonVi = number % 10;
-//
-//        if (number < 0 || number > 999) {
-//            System.out.println("Nhap sai");
-//        } else if (number == 0) {
-//            System.out.println("không");
-//        } else if (number < 20) {
-//            String word = donVi(number);
-//            System.out.println(word);
-//        } else {
-//            String word;
-//            if (hangTram == 0) {
-//                word = hangChuc(hangChuc) + "" + donVi(hangDonVi);
-//
-//            }
-//        }
-//    }
-//}
 public class ChuyenDoiSoThanhChu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
