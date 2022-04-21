@@ -8,7 +8,7 @@ public class Product implements Comparable<Product> {
     public Product() {
     }
 
-    public Product(String name, int id, int price) {
+    public Product(String name, int price) {
         this.name = name;
         this.id = id;
         this.price = price;
@@ -40,11 +40,11 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Tên sản phẩm ( " +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", price=" + price +
-                '}';
+                ')';
     }
 
     @Override

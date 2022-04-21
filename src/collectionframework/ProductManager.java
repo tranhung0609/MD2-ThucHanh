@@ -5,11 +5,13 @@ import java.util.LinkedList;
 
 public class ProductManager implements Manage<Product> {
     LinkedList<Product> products = new LinkedList<>();
-
+    int count = 1;
     @Override
     public void add(Product product) {
+        product.setId(count++);
         products.add(product);
     }
+
 
     @Override
     public void eidt(int id, Product product) {
@@ -38,6 +40,7 @@ public class ProductManager implements Manage<Product> {
 
     @Override
     public Product find(int id) {
+
         return null;
     }
 

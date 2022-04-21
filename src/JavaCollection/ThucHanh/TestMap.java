@@ -17,5 +17,6 @@ public class TestMap {
 
 
         System.out.println("Danh sách thành viên : ");
+        System.out.println(hashMap);
     }
 }
