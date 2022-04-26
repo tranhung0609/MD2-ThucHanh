@@ -22,20 +22,17 @@ public class IllegalTriangleException {
         System.out.println("Nhập vào cạnh z");
         int z = sc.nextInt();
 
-        if (x < 0 || y < 0 || z < 0) {
+        if (x < 0 || y < 0 || z < 0)
             throw new InputMismatchException();
-//            cal(x, y, z);
-//        }
-//
-//        private void cal ( int x, int y, int z){
-//            try {
-//                if (x + y <= z || y + z <= x || x + z <= y) {
-//                    throw new InputMismatchException();
-//                } catch(InputMismatchException e){
-//                    System.out.println("Xảy ra lỗi điều kiện của tam giác");
-//                }
-//            }
-        }
+        cal(x, y, z);
     }
 
-}
+    private void cal(int x, int y, int z) {
+        try {
+            if (x + y <= z || y + z <= x || x + z <= y)
+                throw new InputMismatchException();
+            } catch(InputMismatchException e){
+                System.out.println("Xảy ra lỗi điều kiện của tam giác");
+            }
+        }
+    }
